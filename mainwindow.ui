@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>835</width>
+    <height>503</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图片处理软件</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="Image_label">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>220</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>835</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menuRotate">
+    <property name="title">
+     <string>旋转</string>
+    </property>
+    <addaction name="actionUD"/>
+    <addaction name="actionLF"/>
+   </widget>
+   <widget class="QMenu" name="menuColor">
+    <property name="title">
+     <string>颜色处理</string>
+    </property>
+    <addaction name="actionGray"/>
+    <addaction name="actionCold"/>
+    <addaction name="actionWarm"/>
+    <addaction name="actionEnhan"/>
+   </widget>
+   <widget class="QMenu" name="menuVague">
+    <property name="title">
+     <string>模糊</string>
+    </property>
+    <addaction name="actionGaussian"/>
+    <addaction name="actionMosaic"/>
+   </widget>
+   <widget class="QMenu" name="menuEspec">
+    <property name="title">
+     <string>特效</string>
+    </property>
+    <addaction name="actionSharpen"/>
+   </widget>
+   <widget class="QMenu" name="menuOthers">
+    <property name="title">
+     <string>其他</string>
+    </property>
+    <addaction name="actionOrig"/>
+   </widget>
+   <widget class="QMenu" name="menuTanslation">
+    <property name="title">
+     <string>平移</string>
+    </property>
+    <addaction name="UDTranslation"/>
+    <addaction name="LRTranslation"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuRotate"/>
+   <addaction name="menuColor"/>
+   <addaction name="menuVague"/>
+   <addaction name="menuEspec"/>
+   <addaction name="menuTanslation"/>
+   <addaction name="menuOthers"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionOriginal">
+   <property name="text">
+    <string>Original</string>
+   </property>
+  </action>
+  <action name="actionUD">
+   <property name="text">
+    <string>上下旋转</string>
+   </property>
+  </action>
+  <action name="actionLF">
+   <property name="text">
+    <string>左右旋转</string>
+   </property>
+  </action>
+  <action name="actionGray">
+   <property name="text">
+    <string>灰色</string>
+   </property>
+  </action>
+  <action name="actionCold">
+   <property name="text">
+    <string>冷色</string>
+   </property>
+  </action>
+  <action name="actionWarm">
+   <property name="text">
+    <string>暖色</string>
+   </property>
+  </action>
+  <action name="actionEnhan">
+   <property name="text">
+    <string>鲜艳</string>
+   </property>
+  </action>
+  <action name="actionGaussian">
+   <property name="text">
+    <string>高斯模糊</string>
+   </property>
+  </action>
+  <action name="actionMosaic">
+   <property name="text">
+    <string>马赛克</string>
+   </property>
+  </action>
+  <action name="actionSharpen">
+   <property name="text">
+    <string>锐化</string>
+   </property>
+  </action>
+  <action name="actionOrigin">
+   <property name="text">
+    <string>初始图片</string>
+   </property>
+  </action>
+  <action name="UDTranslation">
+   <property name="text">
+    <string>上下平移</string>
+   </property>
+  </action>
+  <action name="LRTranslation">
+   <property name="text">
+    <string>左右平移</string>
+   </property>
+  </action>
+  <action name="actionZoom">
+   <property name="text">
+    <string>缩放</string>
+   </property>
+  </action>
+  <action name="actionOrig">
+   <property name="text">
+    <string>原图</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
